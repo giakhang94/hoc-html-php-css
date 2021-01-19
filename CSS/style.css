@@ -1,5 +1,8 @@
 
 /* CSS Document */
+*{
+    box-sizing: border-box;
+}
 #carousel-id{
     /* position: absolute; */
     top: 0;
@@ -51,6 +54,12 @@
 .underline:hover::after {
     width: 100%;
   }
+.mainMenu .dropdown-menu a{
+    color: #ffffff;
+    text-decoration: bold;
+    font-size: 16px;
+    font-weight: 400;
+}
 .myMenu li:hover .dropdown-menu{
     position: absolute;
     display: block;
@@ -62,9 +71,60 @@
 
 }
 .myMenu .dropdown-menu a:hover{
-    color: pink;
+    color: #f96882;
     background-color: black;
     text-decoration: bold;
     font-size: 16px;
     font-weight: 400;
+    transition: all 350ms;
+}
+#carousel-id .slide-prev {
+    position: absolute;
+    display: block;
+    top: 045%;
+    left:0px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit !important;
+    box-sizing: border-box;
+    padding: 20px;
+    transform: rotate(90deg);
+}
+#carousel-id .slide-next {
+    position: absolute;
+    display: block;
+    top: 045%;
+    right: 0;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit !important;
+    box-sizing: border-box;
+    padding: 20px;
+    transform: rotate(90deg);
+
+    
+}
+.butt{
+    border: 0px;
+    width: 180px;
+    height: 50px;
+    color: white;
+    background-color: #f96882; 
+    font-family: inherit ;
+
+}
+.butt:hover{
+    background-color: black;
+    transition: all 550ms;
+}
+.butt:not(:hover){
+    background-color: #f96882;
+    transition: all 550ms;
+}
+.carousel-indicators .active {
+    background-color:#f96882 ;
 }
