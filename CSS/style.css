@@ -28,7 +28,6 @@
     margin: 15px;
     text-decoration: bold;
 }
-}
 #carousel-id > ul > li > a{
     font-size: 16px ; 
     /* font-weight: 400;
@@ -78,11 +77,20 @@
     font-weight: 400;
     transition: all 350ms;
 }
+#carousel-id .slide-prev,
+#carousel-id .slide-next {
+    text-align: center;
+}
+
+#carousel-id .slide-index {
+    display: none;
+}
+
 #carousel-id .slide-prev {
     position: absolute;
     display: block;
     top: 045%;
-    left:0px;
+    left: 0;
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 16px;
@@ -90,7 +98,7 @@
     font-family: inherit !important;
     box-sizing: border-box;
     padding: 20px;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
 }
 #carousel-id .slide-next {
     position: absolute;
@@ -115,7 +123,7 @@
     color: white;
     background-color: #f96882; 
     font-family: inherit ;
-    transition: all 550ms;
+    transition: all 8000ms;
 
 }
 .butt:hover{
